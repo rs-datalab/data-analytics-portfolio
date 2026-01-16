@@ -1,4 +1,3 @@
-````markdown
 # NumPy & Pandas Mini-Challenges + Bank Client Capstone
 
 A short, portfolio-focused notebook demonstrating core data analysis skills using **NumPy** and **pandas**.  
@@ -24,18 +23,19 @@ It includes a set of mini-challenges (array creation, masking, filtering, aggreg
 - Run quick validation checks (shape, missing values, summary stats)
 
 ## Files
-- `[your_notebook_name].ipynb` — the notebook with challenges + capstone
+- `01_data_wrangling.ipynb` — the notebook with challenges + capstone
 
 ## How to run
 1. Clone this repo
 2. Install dependencies
    ```bash
    pip install numpy pandas lxml
-````
+```
 
 3. Open the notebook and run all cells
 
 > Note: Some websites may block automated HTML table reads. If `pd.read_html` fails with a 403, it’s typically a site policy, not an issue with pandas.
+
 
 ## Skills demonstrated
 
