@@ -28,11 +28,31 @@ This mini-project uses the **Chinook** sample database (SQLite) to practice and 
 
 ## How to run
 
+## Database
+
+This project uses the **Chinook** sample database.
+
+- Source repository: https://github.com/lerocha/chinook-database  
+- SQLite database file (download from the repo): `ChinookDatabase/DataSources/Chinook_Sqlite.sqlite`
+
 ### Option A: SQLite CLI
-1. Download the Chinook SQLite database file (often named `Chinook_Sqlite.sqlite`).
-2. In your terminal:
+1. Download `Chinook_Sqlite.sqlite` from the Chinook repo above.
+2. Place it next to `chinook_queries.sql` (or keep it elsewhere—just update the path when opening SQLite).
+3. In your terminal:
 
 ```bash
 sqlite3 Chinook_Sqlite.sqlite
 .read chinook_queries.sql
 ```
+### Option B: DB Browser for SQLite / DBeaver
+
+1. Open the Chinook SQLite database file
+2. Open chinook_queries.sql
+3. Run queries (all at once or one section at a time)
+
+## Notes
+
+This project is written for SQLite.
+
+SQLite string concatenation uses: FirstName || ' ' || LastName
+(In some databases you’d use CONCAT(FirstName, ' ', LastName).)
