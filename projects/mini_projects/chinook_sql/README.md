@@ -56,3 +56,8 @@ This project is written for SQLite.
 
 SQLite string concatenation uses: FirstName || ' ' || LastName
 (In some databases you’d use CONCAT(FirstName, ' ', LastName).)
+
+### Sample Outputs
+<img width="1454" height="1224" alt="image" src="https://github.com/user-attachments/assets/064f1233-dba4-4ebc-906f-2c6e08347373" />
+
+<img width="1393" height="1148" alt="image" src="https://github.com/user-attachments/assets/140adcec-b4e7-4229-899f-83744d91fd61" />
