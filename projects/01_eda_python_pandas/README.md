@@ -42,21 +42,22 @@ Below are a few key visuals from the EDA (saved in the `figures/` folder):
 ![Average gross income over time](figures/avg_gross_income_over_time.png)
 
 
-## Repository Structure (suggested)
-.
+## Project Structure 
+```text
 ├── data/
 │   └── supermarket_sales.csv
 ├── figures/
-│   └── avg_gross_income_over_time
-│   └── correlation_heatmap
-│   └── gross_income_by_gender
-│   └── gross_income_by_branch
-│   └── rating_distribution
-│   └── rating_vs_gross_income_regression
+│   ├── avg_gross_income_over_time.png
+│   ├── correlation_heatmap.png
+│   ├── gross_income_by_branch.png
+│   ├── gross_income_by_gender.png
+│   ├── rating_distribution.png
+│   └── rating_vs_gross_income_regression.png
 ├── notebooks/
 │   └── supermarket_sales_eda.ipynb
 ├── report.md
 └── README.md
+```
 
 ## How to Run
 1. Clone the repo and place the dataset in `data/` (or update the path in the notebook).
