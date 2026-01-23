@@ -71,3 +71,6 @@ SQLite string concatenation uses: FirstName || ' ' || LastName
 <img width="1454" height="1224" alt="image" src="https://github.com/user-attachments/assets/064f1233-dba4-4ebc-906f-2c6e08347373" />
 
 <img width="1393" height="1148" alt="image" src="https://github.com/user-attachments/assets/140adcec-b4e7-4229-899f-83744d91fd61" />
+
+<img width="1097" height="690" alt="image" src="https://github.com/user-attachments/assets/882b9cd6-0f88-4686-865a-36c720ba0d0e" />
+
