@@ -4,13 +4,16 @@
   Author: <YOUR NAME>
 
   Patterns covered:
-  - Subqueries
-  - Aggregation + GROUP BY
+  - Subqueries (IN, scalar subquery)
+  - Aggregation + GROUP BY (COUNT, DISTINCT)
   - JOIN / LEFT JOIN
-  - Self-join (employee hierarchy)
-  - Anti-join (missing related records)
-  - UNION
-  - Data-quality check
+  - Self-join (employee hierarchy: manager -> direct reports)
+  - Anti-join (LEFT JOIN ... IS NULL) for missing related records
+  - UNION set operation
+  - String functions + formatting (|| concatenation, SUBSTR, LOWER, UPPER)
+  - Date/time calculations (julianday('now') for tenure / years employed)
+  - Window functions for ranking (DENSE_RANK)
+  - Basic data-quality checks (customer city vs invoice billing city, NULL counts)
 */
 
 -- =========================================================
