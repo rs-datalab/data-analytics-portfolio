@@ -4,7 +4,7 @@ This mini-project uses the **Chinook** sample database (SQLite) to practice and 
 
 ## What’s inside
 
-- `chinook_queries.sql` — 7 SQL queries demonstrating common patterns
+- `chinook_queries.sql` — SQL queries demonstrating common patterns, strings, profiling, ranking, date math
 
 ## Skills demonstrated
 
@@ -15,6 +15,10 @@ This mini-project uses the **Chinook** sample database (SQLite) to practice and 
 - Anti-join pattern (`LEFT JOIN ... IS NULL`) to find missing related records
 - `UNION` set operation
 - Basic data-quality check (customer city vs billing city)
+- **String functions & formatting** (`LOWER`, `UPPER`, `SUBSTR`, concatenation `||`)
+- **Date/time calculations (SQLite)** using `julianday('now')` (e.g., employee tenure)
+- **Window functions for ranking** (`DENSE_RANK()`)
+- **Basic table profiling** (row counts, distinct counts, NULL checks)
 
 ## Queries included
 
@@ -24,7 +28,13 @@ This mini-project uses the **Chinook** sample database (SQLite) to practice and 
 4. Manager last name + employee last name for direct reports (self-join)  
 5. Artists who do not have albums (anti-join)  
 6. Combined list of customer + employee names using `UNION`  
-7. Customers whose city differs from invoice billing city (data check)
+7. Customers whose city differs from invoice billing city (data check)  
+8. Customer list: full name + address + `CITY COUNTRY` in **UPPERCASE**  
+9. Employee user ID from substrings (first 4 of first name + first 2 of last name) in **lowercase**, showing intermediate steps  
+10. Employees with **15+ years** at company (uses SQLite current date via `julianday('now')`)  
+11. Customers table profiling: row count, distinct company count, and NULL counts for key columns  
+12. Cities with the most customers, ranked in descending order (`DENSE_RANK`)  
+13. New invoice identifier combining customer first name + last name + invoice ID, ordered by first name, last name, invoice ID  
 
 ## How to run
 
