@@ -22,10 +22,10 @@
 SELECT
   t.TrackId,
   t.Name AS TrackName
-FROM Tracks t
+FROM Track t
 WHERE t.AlbumId IN (
   SELECT a.AlbumId
-  FROM Albums a
+  FROM Album a
   WHERE a.Title = 'Californication'
 )
 ORDER BY t.TrackId;
@@ -38,9 +38,9 @@ SELECT
   c.FirstName || ' ' || c.LastName AS FullName,
   c.City,
   c.Email,
-  COUNT(i.InvoiceId) AS TotalInvoices
-FROM Customers c
-JOIN Invoices i
+  COUNT(i.InvoiceId) AS TotalInvoice
+FROM Customer c
+JOIN Invoice i
   ON i.CustomerId = c.CustomerId
 GROUP BY
   c.CustomerId,
@@ -48,18 +48,18 @@ GROUP BY
   c.LastName,
   c.City,
   c.Email
-ORDER BY TotalInvoices DESC, c.LastName, c.FirstName;
+ORDER BY TotalInvoice DESC, c.LastName, c.FirstName;
 
 -- =========================================================
--- 3) Track name + album title + artist ID + track ID (all albums)
+-- 3) Track name + album title + artist ID + track ID (all Album)
 -- =========================================================
 SELECT
   t.Name  AS TrackName,
   a.Title AS Album,
   a.ArtistId AS ArtistID,
   t.TrackId AS TrackID
-FROM Albums a
-LEFT JOIN Tracks t
+FROM Album a
+LEFT JOIN Track t
   ON t.AlbumId = a.AlbumId
 ORDER BY a.Title, t.TrackId;
 
@@ -69,19 +69,19 @@ ORDER BY a.Title, t.TrackId;
 SELECT
   m.LastName AS ManagerLastName,
   e.LastName AS EmployeeLastName
-FROM Employees m
-JOIN Employees e
+FROM Employee m
+JOIN Employee e
   ON e.ReportsTo = m.EmployeeId
 ORDER BY m.LastName, e.LastName;
 
 -- =========================================================
--- 5) Artists with no albums (anti-join)
+-- 5) Artist with no Album (anti-join)
 -- =========================================================
 SELECT
   ar.ArtistId,
   ar.Name
-FROM Artists ar
-LEFT JOIN Albums al
+FROM Artist ar
+LEFT JOIN Album al
   ON al.ArtistId = ar.ArtistId
 WHERE al.AlbumId IS NULL
 ORDER BY ar.Name;
@@ -90,22 +90,22 @@ ORDER BY ar.Name;
 -- 6) Customer + employee names using UNION (deduplicated)
 -- =========================================================
 SELECT FirstName, LastName
-FROM Customers
+FROM Customer
 UNION
 SELECT FirstName, LastName
-FROM Employees
+FROM Employee
 ORDER BY LastName DESC, FirstName DESC;
 
 -- =========================================================
--- 7) Data check: customer city differs from invoice billing city
+-- 7) Data check: customer city differs from invoice billing city (there are no mismatches)
 -- =========================================================
 SELECT DISTINCT
   c.CustomerId,
   c.FirstName || ' ' || c.LastName AS FullName,
   c.City AS CustomerCity,
   i.BillingCity
-FROM Customers c
-JOIN Invoices i
+FROM Customer c
+JOIN Invoice i
   ON i.CustomerId = c.CustomerId
 WHERE c.City IS NOT NULL
   AND i.BillingCity IS NOT NULL
@@ -121,7 +121,7 @@ SELECT
   FirstName || ' ' || LastName AS FullName,
   Address,
   UPPER(City || ' ' || Country) AS Location
-FROM Customers
+FROM Customer
 ORDER BY CustomerId;
 
 -- =========================================================
@@ -134,11 +134,11 @@ SELECT
   LOWER(SUBSTR(FirstName, 1, 4)) AS First4,
   LOWER(SUBSTR(LastName,  1, 2)) AS Last2,
   LOWER(SUBSTR(FirstName, 1, 4)) || LOWER(SUBSTR(LastName, 1, 2)) AS NewEmployeeID
-FROM Employees
+FROM Employee
 ORDER BY LastName, FirstName;
 
 -- =========================================================
--- 10) Employees with 15+ years at company (uses current date)
+-- 10) Employee with 15+ years at company (uses current date)
 --     SQLite-friendly: compute years via julianday difference
 -- =========================================================
 SELECT
@@ -146,12 +146,12 @@ SELECT
   LastName,
   HireDate,
   CAST((julianday('now') - julianday(HireDate)) / 365.25 AS INT) AS YearsWithCompany
-FROM Employees
+FROM Employee
 WHERE ((julianday('now') - julianday(HireDate)) / 365.25) >= 15
 ORDER BY LastName ASC;
 
 -- =========================================================
--- 11) Profiling Customers table: row count + distinct companies
+-- 11) Profiling Customer table: row count + distinct companies
 --     + NULL checks for common nullable columns
 -- =========================================================
 SELECT
@@ -163,16 +163,16 @@ SELECT
   SUM(CASE WHEN PostalCode  IS NULL THEN 1 ELSE 0 END) AS null_postalcode,
   SUM(CASE WHEN Phone       IS NULL THEN 1 ELSE 0 END) AS null_phone,
   SUM(CASE WHEN Fax         IS NULL THEN 1 ELSE 0 END) AS null_fax
-FROM Customers;
+FROM Customer;
 
 -- =========================================================
--- 12) Cities with the most customers + rank (descending)
+-- 12) Cities with the most Customer + rank (descending)
 -- =========================================================
 SELECT
   City,
   COUNT(*) AS CustomerCount,
   DENSE_RANK() OVER (ORDER BY COUNT(*) DESC) AS CityRank
-FROM Customers
+FROM Customer
 GROUP BY City
 ORDER BY CustomerCount DESC, City ASC;
 
@@ -185,7 +185,7 @@ SELECT
   c.LastName,
   i.InvoiceId,
   (c.FirstName || c.LastName || i.InvoiceId) AS NewInvoiceID
-FROM Customers c
-JOIN Invoices i
+FROM Customer c
+JOIN Invoice i
   ON i.CustomerId = c.CustomerId
 ORDER BY c.FirstName ASC, c.LastName ASC, i.InvoiceId ASC;
