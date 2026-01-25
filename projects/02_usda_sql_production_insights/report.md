@@ -1,5 +1,9 @@
 # USDA Commodity Production — Business Case Analysis (SQLite)
 
+Role: Data Scientist at USDA (United States Department of Agriculture)
+Context: USDA tracks production of multiple agricultural commodities across states and years to support planning, program prioritization, and stakeholder reporting.
+Primary need: Generate reliable, meeting-ready insights using SQL—state-by-state production, trends, anomalies, and data-backed recommendations.
+
 ## Impact (Why this matters)
 This analysis produces decision-ready outputs for USDA-style commodity planning:
 - **Improves reporting integrity** by identifying coverage gaps (e.g., 26 states missing milk records in 2023).
