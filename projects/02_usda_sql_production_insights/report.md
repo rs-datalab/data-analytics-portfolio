@@ -1,5 +1,19 @@
 # USDA Commodity Production — Business Case Analysis (SQLite)
 
+**Role:** Data Scientist at USDA (United States Department of Agriculture)
+
+**Context:** USDA tracks production of agricultural commodities across states and years to support planning, program prioritization, and stakeholder reporting.
+
+**Dataset: Kaggle “USA Department of Agriculture’s (USDA) Database” (CC0 / Public Domain)**
+- `milk_production`
+- `cheese_production`
+- `coffee_production`
+- `honey_production`
+- `yogurt_production`
+- `state_lookup`
+
+**Goal:** Generate reliable, meeting-ready insights using SQL—state-by-state production, trends, anomalies, and data-backed recommendations.
+
 ## Impact (Why this matters)
 This analysis produces decision-ready outputs for USDA-style commodity planning:
 - **Improves reporting integrity** by identifying coverage gaps (e.g., 26 states missing milk records in 2023).
@@ -10,7 +24,6 @@ This analysis produces decision-ready outputs for USDA-style commodity planning:
 
 **SQL source:** `sql/10_analysis.sql`  
 **Environment:** SQLite + DBeaver  
-**Dataset:** Kaggle “USA Department of Agriculture’s (USDA) Database” (CC0 / Public Domain)
 
 ---
 
