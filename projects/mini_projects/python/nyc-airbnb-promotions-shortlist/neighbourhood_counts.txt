@@ -1,0 +1,6 @@
+neighbourhood_group
+Brooklyn         231
+Manhattan        143
+Queens           133
+Bronx             29
+Staten Island     18
