@@ -1,6 +1,6 @@
 # Python Automation, Validation & Data Structuring (Python)
 
-This project is a beginner-friendly practice notebook that combines three core foundations used in real data work:
+This project combines three core foundations used in real data work:
 **iteration for automation**, **string validation/parsing**, and **lightweight data structuring**.
 
 ## What this notebook covers
