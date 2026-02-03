@@ -26,7 +26,7 @@ Source: https://www.kaggle.com/datasets/jacopoferretti/usa-department-of-agricul
 - DBeaver (used for database creation + CSV import)
 - SQL scripts (schema, cleanup, analysis)
 
-## Suggested Repository Structure
+## Contents
 ```text
 .
 ├── sql/
@@ -34,3 +34,5 @@ Source: https://www.kaggle.com/datasets/jacopoferretti/usa-department-of-agricul
 │   ├── 02_clean.sql
 │   └── 10_analysis.sql
 ├── report.md
+├── README.md
+
