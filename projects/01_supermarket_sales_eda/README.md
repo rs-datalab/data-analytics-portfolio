@@ -9,8 +9,7 @@ It includes:
 - Univariate and bivariate analysis
 - Time series aggregation by date
 - Pairwise numeric relationships and correlation analysis
-- A short written report for recruiters
-
+- A short written report
 ## Dataset
 Supermarket Sales (Kaggle): https://www.kaggle.com/aungpyaeap/supermarket-sales  
 Time: Jan–Mar 2019  
