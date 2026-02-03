@@ -1,7 +1,7 @@
 # Customer Feedback Mini Project (Python For-Loops)
 
 ## Overview
-This repository contains a beginner-friendly Python mini project built in a Jupyter Notebook.  
+This is a Python mini project built in a Jupyter Notebook.  
 It simulates a realistic customer feedback workflow and demonstrates how to use **for-loops**, **conditional logic**, and **nested loops** to summarize and validate simple datasets.
 
 ## What’s inside
