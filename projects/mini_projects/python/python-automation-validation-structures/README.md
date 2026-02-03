@@ -26,8 +26,7 @@ This project combines three core foundations used in real data work:
 - Filtering records using unpacking and list comprehensions
 
 ## Files
-- `python_automation_validation_data_structuring.ipynb` — the main notebook  
-  *(Rename this line to match your actual notebook filename if different.)*
+- `python-automation-validation-structures.ipynb` — the main notebook  
 
 ## Key functions
 
