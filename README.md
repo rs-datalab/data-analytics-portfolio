@@ -1,118 +1,127 @@
-# 📊 Data Analytics Portfolio
+# Data Analytics Portfolio
 
-Welcome to my data analytics portfolio. This repository showcases a collection of projects covering data cleaning, analysis, visualization, and SQL-based exploration using real and simulated datasets.
+Welcome to my data analytics portfolio. Here you will find projects in Python, SQL, and Power BI that reflect my approach to analytics work: cleaning and structuring raw data, analysing patterns and trends, and communicating results through dashboards, reports, and summary outputs. The portfolio focuses on practical analytics, with an emphasis on reproducible workflows, readable code, and outputs that support decision-making.
 
-The goal of this portfolio is to demonstrate practical skills in:
-- Python (pandas, data wrangling, validation)
-- SQL (data extraction and analysis)
-- Data visualization (Power BI, matplotlib)
-- Building clean, analysis-ready datasets from raw data
+## Core Skills
 
----
+- **Python:** pandas, data cleaning, validation, exploratory analysis
+- **SQL:** querying, joins, aggregations, cleaning, and analytical reporting
+- **Power BI:** dashboards, KPI tracking, filters, and business-facing visualisation
+- **Analytics workflow:** transforming raw data into analysis-ready outputs
+- **Documentation:** clear README files, reports, and structured project delivery
 
-## 📁 Projects
+## Featured Projects
 
-### 🐍 Python Projects
+### 1) Sales Performance Dashboard (Power BI)
+Interactive dashboard built in Power BI using the AdventureWorks sample dataset.
 
-#### 📦 E-commerce Cart Data Pipeline  
-**Folder:** `python-ecommerce-cart-data-pipeline/`  
-- Processes nested JSON data from the DummyJSON API  
-- Cleans, validates, and enriches cart item data  
-- Produces analysis-ready datasets and summary tables  
+**What it demonstrates**
+- KPI monitoring
+- sales trend analysis
+- top product reporting
+- customer and revenue breakdowns
+- geographic performance analysis
 
-**Key outputs:**
-- Cleaned cart item dataset  
-- Bad records (validation failures)  
-- User-level summary  
-- Category-level summary  
+**Tools**
+Power BI, DAX, data modelling
 
----
-
-#### 🏙️ NYC Airbnb Promotion Shortlist  
-**Folder:** `python-nyc-airbnb-promotion-shortlist/`  
-- Filters and analyzes Airbnb listings  
-- Identifies high-value properties for promotion  
-- Outputs curated shortlist datasets  
+**Repository**  
+[powerbi-sales-dashboard](https://github.com/rs-datalab/powerbi-sales-dashboard)
 
 ---
 
-#### 🛒 Supermarket Sales Analysis  
-**Folder:** `python-supermarket-sales-analysis/`  
-- Exploratory data analysis on retail sales data  
-- Includes visualizations and correlation analysis  
-- Focus on revenue drivers and customer behavior  
+### 2) E-commerce Cart Data Pipeline
+Python project that processes nested JSON cart, product, and user data into a clean item-level dataset and summary tables.
+
+**What it demonstrates**
+- flattening nested JSON
+- validation and rejection logic
+- enrichment through joins
+- creation of clean analytical outputs
+
+**Outputs**
+- clean cart items
+- bad records table
+- user summary
+- category summary
+
+**Tools**
+Python, pandas, JSON
+
+**Repository**  
+[python-ecommerce-cart-data-pipeline](https://github.com/rs-datalab/python-ecommerce-cart-data-pipeline)
 
 ---
 
-#### 🧪 Python Learning Exercises  
-**Folder:** `python-learning-exercises/`  
-- Smaller focused exercises covering:
-  - data wrangling with pandas and NumPy  
-  - validation and automation logic  
-  - mini analysis projects  
+### 3) USDA Commodity Production Analysis (SQL)
+SQL project structured around schema creation, data cleaning, and business-style analysis of commodity production data across states and years.
+
+**What it demonstrates**
+- SQL workflow from schema to analysis
+- reporting-oriented querying
+- state-level and year-level analysis
+- identification of data coverage gaps
+
+**Tools**
+SQLite, SQL
+
+**Repository**  
+[sql-usda-commodity-production-analysis](https://github.com/rs-datalab/sql-usda-commodity-production-analysis)
 
 ---
 
-### 📊 Power BI
+### 4) Supermarket Sales Analysis
+Exploratory data analysis project focused on supermarket transaction data, profitability patterns, and customer behaviour.
 
-#### 📈 Sales Dashboard (AdventureWorks)  
-**Folder:** `powerbi-sales-dashboard/`  
-- Interactive dashboard built in Power BI  
-- Visualizes sales performance, trends, and KPIs  
-- Includes exported PDF preview  
+**What it demonstrates**
+- data inspection and cleaning
+- exploratory analysis
+- correlation analysis
+- visual communication of findings
 
----
+**Tools**
+Python, pandas, matplotlib
 
-### 🧮 SQL Projects
-
-#### 🗄️ Chinook Analytics Practice  
-**Folder:** `sql-chinook-analytics-practice/`  
-- SQL queries on a music store database  
-- Covers joins, aggregations, and filtering  
+**Repository**  
+[python-supermarket-sales-analysis](https://github.com/rs-datalab/python-supermarket-sales-analysis)
 
 ---
 
-#### 🌾 USDA Commodity Production Analysis  
-**Folder:** `sql-usda-commodity-production-analysis/`  
-- SQL-based data cleaning and analysis  
-- Structured into:
-  - schema setup  
-  - data cleaning  
-  - analytical queries  
-- Includes written report  
+### 5) NYC Airbnb Promotion Shortlist
+Python project that filters and analyses Airbnb listings using campaign-style business rules to identify promotion-ready properties.
 
----
+**What it demonstrates**
+- data cleaning
+- rule-based filtering
+- shortlist generation
+- simple reporting outputs
 
-## 🛠️ Tools & Technologies
+**Tools**
+Python, pandas
 
-- **Python:** pandas, NumPy  
-- **SQL:** SQLite  
-- **Data Visualization:** Power BI, matplotlib  
-- **Other:** Jupyter Notebook, JSON, CSV  
+**Repository**  
+[python-nyc-airbnb-promotion-shortlist](https://github.com/rs-datalab/python-nyc-airbnb-promotion-shortlist)
 
----
+## Additional Projects
 
-## 📌 How to Navigate This Repo
+### Chinook SQL Analytics Practice
+SQL practice project using the Chinook database to explore joins, filtering, aggregation, and query structure.
 
-Each project folder contains:
-- a `README.md` explaining the project  
-- notebooks or SQL scripts  
-- outputs (datasets, figures, or reports)  
+[sql-chinook-analytics-practice](https://github.com/rs-datalab/sql-chinook-analytics-practice)
 
-You can explore projects individually depending on your interest:
-- Python → data processing and analysis workflows  
-- SQL → query-based data exploration  
-- Power BI → dashboard and visualization work  
+### Python Learning Exercises
+Smaller notebooks focused on Python fundamentals for analytics, including validation, automation, and data wrangling.
 
----
+[python-learning-exercises](https://github.com/rs-datalab/python-learning-exercises)
 
-## 🎯 Focus
+## What This Portfolio Demonstrates
 
-This portfolio emphasizes:
-- clean and readable code  
-- structured data workflows  
-- practical data validation  
-- clear, interpretable outputs  
+Across these projects, I focus on:
+
+- building clean, analysis-ready datasets from raw inputs
+- using SQL and Python to answer structured business questions
+- creating clear outputs such as dashboards, reports, and summary tables
+- documenting work in a way that is easy to review and reproduce
 
 ---
 
