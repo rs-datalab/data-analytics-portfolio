@@ -12,26 +12,27 @@ Welcome to my data analytics portfolio. Here you will find projects in Python, S
 
 ## Featured Projects
 
-### 1) Sales Performance Dashboard (Power BI)
-Interactive dashboard built in Power BI using the AdventureWorks sample dataset.
+### 1) USDA Commodity Production Analysis (SQL)
+
+SQL project structured around schema creation, data cleaning, and business-style analysis of commodity production data across states and years to identify production patterns, compare regions, and highlight data coverage gaps.
 
 **What it demonstrates**
-- KPI monitoring
-- sales trend analysis
-- top product reporting
-- customer and revenue breakdowns
-- geographic performance analysis
+- SQL workflow from schema to analysis
+- reporting-oriented querying
+- state-level and year-level analysis
+- identification of data coverage gaps
 
-**Tools**
-Power BI, DAX, data modelling
+**Tools**  
+SQLite, SQL
 
 **Repository**  
-[powerbi-sales-dashboard](https://github.com/rs-datalab/powerbi-sales-dashboard)
+[sql-usda-commodity-production-analysis](https://github.com/rs-datalab/sql-usda-commodity-production-analysis)
 
 ---
 
 ### 2) E-commerce Cart Data Pipeline
-Python project that processes nested JSON cart, product, and user data into a clean item-level dataset and summary tables.
+
+Python project that processes nested JSON cart, product, and user data into a clean item-level dataset and summary tables, creating structured outputs that support downstream analysis and reporting.
 
 **What it demonstrates**
 - flattening nested JSON
@@ -45,7 +46,7 @@ Python project that processes nested JSON cart, product, and user data into a cl
 - user summary
 - category summary
 
-**Tools**
+**Tools**  
 Python, pandas, JSON
 
 **Repository**  
@@ -53,24 +54,27 @@ Python, pandas, JSON
 
 ---
 
-### 3) USDA Commodity Production Analysis (SQL)
-SQL project structured around schema creation, data cleaning, and business-style analysis of commodity production data across states and years.
+### 3) Sales Performance Dashboard (Power BI)
+
+Interactive dashboard built in Power BI using the AdventureWorks sample dataset to monitor KPIs, analyse sales trends, and support business-facing performance review across products, customers, and geographies.
 
 **What it demonstrates**
-- SQL workflow from schema to analysis
-- reporting-oriented querying
-- state-level and year-level analysis
-- identification of data coverage gaps
+- KPI monitoring
+- sales trend analysis
+- top product reporting
+- customer and revenue breakdowns
+- geographic performance analysis
 
-**Tools**
-SQLite, SQL
+**Tools**  
+Power BI, DAX, data modelling
 
 **Repository**  
-[sql-usda-commodity-production-analysis](https://github.com/rs-datalab/sql-usda-commodity-production-analysis)
+[powerbi-sales-dashboard](https://github.com/rs-datalab/powerbi-sales-dashboard)
 
----
+## Additional Projects
 
-### 4) Supermarket Sales Analysis
+### Supermarket Sales Analysis
+
 Exploratory data analysis project focused on supermarket transaction data, profitability patterns, and customer behaviour.
 
 **What it demonstrates**
@@ -79,7 +83,7 @@ Exploratory data analysis project focused on supermarket transaction data, profi
 - correlation analysis
 - visual communication of findings
 
-**Tools**
+**Tools**  
 Python, pandas, matplotlib
 
 **Repository**  
@@ -87,7 +91,8 @@ Python, pandas, matplotlib
 
 ---
 
-### 5) NYC Airbnb Promotion Shortlist
+### NYC Airbnb Promotion Shortlist
+
 Python project that filters and analyses Airbnb listings using campaign-style business rules to identify promotion-ready properties.
 
 **What it demonstrates**
@@ -96,13 +101,13 @@ Python project that filters and analyses Airbnb listings using campaign-style bu
 - shortlist generation
 - simple reporting outputs
 
-**Tools**
+**Tools**  
 Python, pandas
 
 **Repository**  
 [python-nyc-airbnb-promotion-shortlist](https://github.com/rs-datalab/python-nyc-airbnb-promotion-shortlist)
 
-## Additional Projects
+## Learning Projects
 
 ### Chinook SQL Analytics Practice
 SQL practice project using the Chinook database to explore joins, filtering, aggregation, and query structure.
